@@ -10,7 +10,7 @@ pool
   .then(() => console.log("Connected to database"))
   .catch((err) => console.log("failed to connect to database", err));
 
-const PORT = (process.env.PORT as string) || 8080;
+const PORT = (process.env.PORT as string) || "8080";
 
 const app = express();
 app.use(cors());
