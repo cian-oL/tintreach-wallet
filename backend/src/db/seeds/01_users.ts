@@ -1,7 +1,7 @@
 import { Knex } from "knex";
 import bcrypt from "bcryptjs";
 
-import { User } from "../../models/User";
+import { User } from "../../types/userTypes";
 
 export async function seed(knex: Knex): Promise<void> {
   // Deletes ALL existing entries
